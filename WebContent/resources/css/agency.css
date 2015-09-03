@@ -265,12 +265,13 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/Hobbies4.jpg);
+    background-image: url(../img/Hobbies6.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    background-size:cover;
+    
     -o-background-size: cover;
 }
 
@@ -305,9 +306,10 @@ header .intro-text .intro-heading {
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
+        font-size: 50px;
         font-style: italic;
         line-height: 40px;
+        
     }
 
     header .intro-text .intro-heading {
