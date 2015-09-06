@@ -230,6 +230,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fec503;
 }
 
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
