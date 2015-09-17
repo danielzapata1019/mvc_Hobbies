@@ -265,7 +265,7 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     text-align: center;
-    color: #fff;
+    color: #0040FF;
     background-attachment: scroll;
     background-image: url(../img/caminar.jpg);
     background-position: center center;
@@ -667,7 +667,7 @@ section#contact .section-heading {
 }
 
 section#contact .form-group {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 section#contact .form-group input,

@@ -33,7 +33,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" link="black" vlink="yellow" alink="blue">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="../index.html">Hobbies</a>
+                <a class="navbar-brand page-scroll" href="../sesion">Hobbies</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,7 +69,7 @@
                        <a class="page-scroll" href="#team">Relacionados</a> 
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Inscrpciones</a>
+                        <a class="page-scroll" href="#contact">Inscripciones</a>
                     </li>
                 </ul>
             </div>
@@ -196,22 +196,22 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="../resources/img/team/camina6.jpg" height="200" width="200" class="img-circle" alt="">
+                        <img src="../resources/img/team/camina6.jpg" height="250" width="300" class="img-rounded" alt="">
                         <p class="text-muted"> <a href="#portfolioModal1"class="portfolio-link" data-toggle="modal">Recomendaciones</a></p>
                         
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="../resources/img/team/Camina8.jpg" height="200" width="200" class="img-circle" alt="">
+                        <img src="../resources/img/team/Camina8.jpg" height="250" width="300" class="img-rounded" alt="">
                          <p class="text-muted"><a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">Beneficios</a></p>
                         
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="../resources/img/team/aireLibre.jpg" height="200" width="200" class="img-circle" alt="">
-                        <p class="text-muted"><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">Niveles Caminatas</p>
+                        <img src="../resources/img/team/aireLibre.jpg" height="250" width="300" class="img-rounded" alt="">
+                        <p class="text-muted"><a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">Niveles Caminatas</a></p>
                         
                     </div>
                 </div>
@@ -262,21 +262,85 @@
                 </div>
             </div>
       
-                <h1>Pr√≥ximas Caminadas</h1>
+                <h1><font color="D7DF01">PrÛximas Caminadas</font></h1>
                 <br>
                 <br>
-                <img src="../resources/img/recorridos/12sep.png">
+                <table>
+                <tr>
+                 <td><img src="../resources/img/recorridos/12sep.png"></td>
+                 <td><ul>
+                 <font color="#ffffff">
+                <li>Dia: 12 Septiembre</li>
+                <li>Hora de salida: 07:00 a 07:30 am</li>
+                <li>Punto de encuentro: EstaciÛn Metro Estadio, plazoleta del ajedrez</li>
+                <li>Recorrido: Altares Sagrados del Cerro el Volador</li>
+                <li>DuraciÛn: 4 Horas incluye las paradas t√©cnicas</li>
+                <li>Nivel: Nivel 2 Medio Bajo para caminantes principiantes</li>
+                </ul></td>
+                </tr>
+                
+                <tr>
+                <td> <br></td>
+                <td><br></td>
+                </tr>
+                
+                <tr>
+                <td> 
+                <form>
+                <font color="#ffffff">
+                <table>
+                <tr>
+                <td>Nombres:</td>
+                <td> <input type="text" id="txtNombre"></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>Apellidos:</td>
+                <td><input type="text" id="txtApellido"></td>
+                </tr>
+                 <tr>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>Telefono:</td>
+                <td><input type="text" id="txtTelefono"></td>
+                </tr>
+                 <tr>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>Correo:</td>
+                <td><input type="text" id="txtCorreo"></td></font>
+                </tr>
+                 <tr>
+                <td></td>
+                <td></td>
+                </tr>
+                 <tr>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td><button type="submit" class="btn btn-xl">Inscribirse</button></td>
+                <td></td>
+                </tr>
+                </table>
+                </font>
+                </form>  </td>
+                
+                
+                <td>   </td>
+                </tr></table>
+                
                 
                 <br>
                 <br>
-                <ul>
-                <li>Dia: 12 Septiembre</li>
-                <li>Hora de salida: 07:00 a 07:30 am</li>
-                <li>Punto de encuentro: Estaci√≥n Metro Estadio, plazoleta del ajedrez</li>
-                <li>Recorrido: Altares Sagrados del Cerro el Volador</li>
-                <li>Duraci√≥n: 4 Horas incluye las paradas t√©cnicas</li>
-                <li>Nivel: Nivel 2 Medio Bajo para caminantes principiantes</li>
-                </ul>
+                
                 
                 
                     <!--  <form name="sentMessage" id="contactForm" novalidate>
