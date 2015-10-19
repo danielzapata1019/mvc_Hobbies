@@ -15,13 +15,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hobbies</title>
+    <title>Cursos</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../resources/css/aireLibre.css" rel="stylesheet">
+    <link href="../resources/css/cursos.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../resources/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -88,8 +88,8 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Aire Libre</div>
-                <div class="intro-heading">Caminar</div>
+                <div class="intro-lead-in">Cursos</div>
+                <div class="intro-heading">Musica</div>
                 <a href="#services" class="page-scroll btn btn-xl">Leer Más</a>
             </div>
         </div>
@@ -101,8 +101,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Caminar</h2>
-                    <h3 class="section-subheading text-muted">Una excelente alternativa para tu Bienestar.</h3>
+                    <h2 class="section-heading">Musica</h2>
+                    <h3 class="section-subheading text-muted">Una Vibración para el Corazón</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -129,7 +129,7 @@
                 </div>
             </div>
 			       
-				
+				<table>
 				 <c:forEach items="${tipoobj}" var="tipoDTO">
 				 <div class="col-md-4">
                    <img class="img-circle" height="200" width="200" src=<c:out value="${tipoDTO.imagen2}"/>>
@@ -137,11 +137,26 @@
                     <p class="text-muted" align="justify"><c:out value="${tipoDTO.titulo}"/></p>
                     <p class="text-muted" align="justify"><c:out value="${tipoDTO.descripcion}"/></p>
                 </div>	     
-				 
+				  <tr>
+					
+					<td></td>
+				    <td><img class="img-circle" src=<c:out value="${tipoDTO.imagen2}"/>></td>
+				    <td>    </td>
+				    <td>   </td>
+				    <td>
+                    <ul>
+                        <li>                    
+                         <h4 class="subheading"><c:out value="${tipoDTO.titulo}"/></h4>
+                         <p class="text-muted" align="justify"><c:out value="${tipoDTO.descripcion}"/> </p>
+    					 </li></ul>
+                     </td> 
+				    
+				  </tr>
+				  <tr></tr>
 				  
 				  </c:forEach>
 				  
-				
+				</table>
            
                             
     </section>

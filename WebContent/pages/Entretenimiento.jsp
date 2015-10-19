@@ -88,7 +88,7 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Aire Libre</div>
+                <div class="intro-lead-in">Entretenimiento</div>
                 <div class="intro-heading">Caminar</div>
                 <a href="#services" class="page-scroll btn btn-xl">Leer Más</a>
             </div>
@@ -129,7 +129,7 @@
                 </div>
             </div>
 			       
-				
+				<table>
 				 <c:forEach items="${tipoobj}" var="tipoDTO">
 				 <div class="col-md-4">
                    <img class="img-circle" height="200" width="200" src=<c:out value="${tipoDTO.imagen2}"/>>
@@ -137,11 +137,26 @@
                     <p class="text-muted" align="justify"><c:out value="${tipoDTO.titulo}"/></p>
                     <p class="text-muted" align="justify"><c:out value="${tipoDTO.descripcion}"/></p>
                 </div>	     
-				 
+				  <tr>
+					
+					<td></td>
+				    <td><img class="img-circle" src=<c:out value="${tipoDTO.imagen2}"/>></td>
+				    <td>    </td>
+				    <td>   </td>
+				    <td>
+                    <ul>
+                        <li>                    
+                         <h4 class="subheading"><c:out value="${tipoDTO.titulo}"/></h4>
+                         <p class="text-muted" align="justify"><c:out value="${tipoDTO.descripcion}"/> </p>
+    					 </li></ul>
+                     </td> 
+				    
+				  </tr>
+				  <tr></tr>
 				  
 				  </c:forEach>
 				  
-				
+				</table>
            
                             
     </section>

@@ -1,11 +1,18 @@
-package co.com.hobbies.portada;
+package co.com.hobbies.modelo;
+
+import java.io.Serializable;
 
 /**
  * Clase que contiene la Informacion de las sesiones de la portada
  * @author Daniel
  *
  */
-public class Sesion {
+public class SesionDTOold implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 292407813194348828L;
+
 	/**
 	 * Titulo de la Sesion
 	 */
@@ -16,8 +23,15 @@ public class Sesion {
 	 */
 	private String imagen;
 	
+	private String link;
 	
 	
+	public String getLink() {
+		return link;
+	}
+	public void setLink(String link) {
+		this.link = link;
+	}
 	public String getTitulo() {
 		return titulo;
 	}

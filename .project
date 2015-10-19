@@ -3,6 +3,7 @@
 	<name>mvc_simple</name>
 	<comment></comment>
 	<projects>
+		<project>mvc_jdbc</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

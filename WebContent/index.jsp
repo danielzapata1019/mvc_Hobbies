@@ -1,23 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-	<spring:url value="/resources/css/agency.css" var="coreCss" />
-	<spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCss" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
   
     <title>Hobbies</title>
 
     <!-- Bootstrap Core CSS -->
-   	<!--<link href="${bootstrapCss}" rel="stylesheet" />
-	<link href="${coreCss}" rel="stylesheet" />-->
     <link href="resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="resources/css/agency.css" rel="stylesheet">
 
@@ -132,95 +128,28 @@
                 </div>
             </div>
             <div class="row">
+            <c:forEach items="${sesionobj}" var="sesionDTO">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="<c:url value="${sesionDTO.link}"/>" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<c:url value="/resources/img/portfolio/entretenimiento2.jpg" />"class="img-responsive" alt="">
+                        <img src=<c:out value="${sesionDTO.imagen}"/> class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Entretenimiento</h4>
+                        <h4><c:out value="${sesionDTO.titulo}"/></h4>
                         <p class="text-muted"></p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="<c:url value="pages/AireLibre.jsp"/>" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="<c:url value="resources/img/portfolio/aireLibre2.jpg"/>" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Aire Libre</h4>
-                        <p class="text-muted"></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="resources/img/portfolio/corazonMusic.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Cursos</h4>
-                        <p class="text-muted"></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="resources/img/portfolio/arte.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Arte</h4>
-                        <p class="text-muted"></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="resources/img/portfolio/deporte.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Deporte</h4>
-                        <p class="text-muted"></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="resources/img/portfolio/humanitario.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Humanitario</h4>
-                        <p class="text-muted"></p>
-                    </div>
-                </div>
+                </c:forEach>
+                
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section --><!--  
     <section id="about">
         <div class="container">
             <div class="row">
@@ -301,9 +230,9 @@
         </div>
     </section>
 
-   
+   -->
 
-    <!-- Clients Aside -->
+    <!-- Clients Aside --><!--  
     <aside class="clients">
         <div class="container">
             <div class="row">
@@ -331,7 +260,9 @@
         </div>
     </aside>
     
-    <!-- Contact Section -->
+    -->
+    
+    <!-- Contact Section --> <!--  
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -402,7 +333,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
